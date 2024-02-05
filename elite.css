@@ -1,0 +1,34 @@
+
+       
+            body
+            {
+                background-image: url('file:///C:/Users/chite/Pictures/Saved%20Pictures/PaltryNaturalDotterel-max-1mb.gif');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size:100% 100% ;
+                background-position: center;
+                border: 10px solid rgba(128, 128, 128, 0.63);
+            }
+            h1
+            {
+                color: rgb(0, 0, 0);
+            background-color: rgba(105, 105, 105, 0.167);
+            text-align:center;
+            border: 10px solid rgba(128, 128, 128, 0.22);
+            font-size:250%;
+            }
+            h2
+            {
+                color: rgb(0, 0, 0);
+            background-color: rgba(105, 105, 105, 0.167);
+            text-align:left;
+            border: 10px solid rgba(128, 128, 128, 0.22);
+            font-style: italic;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 190%;
+            
+            }
+            p{
+                font-size: 170%;
+          }
+        

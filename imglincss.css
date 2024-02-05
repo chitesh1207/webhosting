@@ -1,0 +1,41 @@
+body{
+    background-image: url('file:///C:/Users/chite/Pictures/Saved%20Pictures/wp9539457.webp'); 
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100% 160%;
+    background-color:rgba(92, 102, 110, 0.811);
+    background-position:center ; 
+}
+
+h1
+{
+  color:rgba(227, 224, 235, 0.421);
+  text-align:center;
+  text-shadow: aqua;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a:link
+{
+   color: cornflowerblue;
+   background-color: transparent; 
+   text-decoration: none;
+}
+a:visited
+{
+    color:rgb(231, 183, 222);
+    background-color:transparent ;
+    text-decoration: wavy;
+}
+a:hover
+{
+    color:grey;
+    background-color:transparent;
+    text-decoration: underline;
+}
+a:active
+{
+    color:pink;
+    background-color: bisque;
+    text-decoration: underline;
+}

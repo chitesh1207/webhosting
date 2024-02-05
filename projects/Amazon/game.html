@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    GAME
+  </title>
+</head>
+<html>
+  <body>
+    <h1>ROCK-PAPER-SCESORE</h1>
+     
+    <button onclick="
+    function2('ROCK');      
+    ">ROCK</button>
+              
+    <button onclick="
+    function2('PAPER'); 
+    ">PAPER</button>
+
+    <button onclick="
+    function2('SCESORE');       
+    ">SCESORE</button>
+
+  </body>
+
+
+  <script>
+     function function2(playermove){
+            const computermove = function1();
+            let result = ''
+
+            if(playermove === 'SCESORE'){
+
+                if(computermove === 'ROCK'){
+                result = 'YOU LOSE'
+                }
+                else if (computermove === 'PAPER'){
+                result = 'YOU WIN'
+                }
+                else if (computermove === 'SCESORE'){
+                result = 'TIE'
+                }
+
+                alert(`HEY computermove is ${computermove} playermove ${playermove}. so ${result}.`);
+            }
+            else if( playermove === 'PAPER'){
+              const computermove = function1();
+
+              let result = ''
+
+              if(computermove === 'ROCK'){
+              result = 'YOU WIN'
+              }
+              else if (computermove === 'PAPER'){
+              result = 'TIE'
+              }
+              else if (computermove === 'SCESORE'){
+              result = 'YOU LOSE'
+              }
+
+              alert(`HEY computermove is ${computermove} playermove ${playermove}. so ${result}.`);
+
+            }
+            else if(playermove === 'ROCK'){
+
+            const computermove = function1();
+
+            let result = ''
+
+            if(computermove === 'ROCK'){
+              result = 'TIE'
+            }
+            else if (computermove === 'PAPER'){
+              result = 'YOU LOSE'
+            }
+            else if (computermove === 'SCESORE'){
+              result = 'YOU WIN'
+            }
+            alert(`HEY computermove is ${computermove} playermove ${playermove}. so ${result}.`);
+         }      
+     }
+      function function1(){
+
+      const randomnumber = Math.random();
+
+      let computermove = '';
+
+      if (randomnumber >= 0 && randomnumber < 1/2) {
+      computermove = 'ROCK';
+      }
+      else if (randomnumber >= 1/2 && randomnumber < 3/2){
+      computermove = 'PAPER';
+      }
+      else if (randomnumber >= 3/2 && randomnumber < 1) {
+      computermove = 'SCESORE'
+      }
+      return computermove;
+    }
+    
+
+  </script>
+
+</html>

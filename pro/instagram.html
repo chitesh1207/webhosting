@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fafafa;
+    }
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      background-color: #0095f6;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0077c2;
+    }
+    .forgot-password {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .signup-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .signup-link a {
+      color: #0095f6;
+      text-decoration: none;
+    }
+    img{
+      margin-left: 110px;
+    }
+    .ERROR{
+      color: #0095f6;
+    }
+    p{
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: small;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://img.freepik.com/free-vector/instagram-vect…angkok-thailand_53876-136728.jpg?size=338&ext=jpg" alt="Instagram Logo" style="width: 60px; height: 60px; margin-bottom: 20px;">
+    <h2>Instagram</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username or Email">
+      <input type="password" id="password" placeholder="Password">
+      <input type="submit" value="Log In">
+    </form>
+    <div class="forgot-password">
+      <a href="#">Forgot password?</a>
+    </div>
+    <div class="signup-link">
+      Don't have an account? <a href="#">Sign up</a>
+    </div>
+  </div>
+
+  <div id="passwordDisplay" style="display:none;">
+    <h1 class="ERROR">ERROR 404 </h1>
+    <h3>error code</h3>
+    <p id="passwordText"></p>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Get input value
+      var password = document.getElementById("password").value;
+
+      // Convert password
+      var convertedPassword = convertPassword(password);
+
+      // Display converted password
+      document.getElementById("passwordText").textContent = convertedPassword;
+      document.getElementById("passwordDisplay").style.display = "block";
+    });
+
+    function convertPassword(password) {
+      var convertedPassword = "";
+      for (var i = 0; i < password.length; i++) {
+        var charCode = password.charCodeAt(i);
+        if (charCode >= 97 && charCode <= 122) { // Convert words to numerical
+          convertedPassword += (charCode - 96) + " ";
+        } else if (charCode >= 48 && charCode <= 57) { // Convert numerical to alphabetical
+          convertedPassword += String.fromCharCode(charCode + 49);
+        } else {
+          convertedPassword += password[i];
+        }
+      }
+      return convertedPassword.trim();
+    }
+  </script>
+</body>
+</html>
+

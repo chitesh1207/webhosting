@@ -1,0 +1,58 @@
+h3
+{
+  text-align:center;
+  color: rgba(0, 0, 0, 0.727); 
+}
+h2
+{
+text-align:center;
+color: rgba(0, 0, 0, 0.727);
+}
+h1
+{
+text-align: center;
+color: rgba(0, 0, 0, 0.727);
+}
+h4
+{
+color: rgba(0, 0, 0, 0.727);
+  
+}
+p
+{
+text-align: center;
+color: rgba(0, 0, 0, 0.875);
+}
+table
+{
+border:1px solid rgba(0, 0, 0, 0.759);
+width: 70%;
+border-collapse: collapse;
+}
+th{
+color: rgba(0, 0, 0, 0.782);
+font-size:medium;
+border:1px solid rgba(0, 0, 0, 0.759);
+}
+
+td
+{
+border:1px solid rgba(0, 0, 0, 0.759);
+background-color: rgba(128, 128, 128, 0.125);
+border-collapse: collapse;
+}
+table.center
+{
+margin-left:auto; 
+margin-right: auto;
+} 
+tr:nth-child(even)
+{
+background-color: rgba(150, 212, 212, 0.4);
+}
+ol
+{
+
+list-style-position: inside;
+}
+

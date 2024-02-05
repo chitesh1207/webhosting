@@ -1,0 +1,89 @@
+td{
+   background-color:rgba(99, 42, 165, 0.195) ; 
+   padding: 5px;
+   border-style:groove;
+   margin: 2px;
+   font-size:23px;
+   color:black;
+}
+select
+{
+   background-color:rgba(99, 42, 165, 0.005) ; 
+   width: 17px;
+   font-size:15px;
+   height:75%;
+   font-style:normal;
+   border: none; 
+}
+option
+{
+   background-color: rgba(100, 148, 237, 0.893);
+}
+.site{
+   background-image: url("https://www.sasi.ac.in/wp-content/uploads/2021/07/factshomepage.png");
+   background-position:center;
+   background-repeat: no-repeat;
+   background-color: rgba(0, 34, 255, 0.205);
+   background-size: 25%;
+   font-size: 15px;
+   color: rgba(224, 9, 9, 0.899);
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+}
+.site2
+{
+   
+   background-color: rgba(0, 34, 255, 0.205);
+}
+.abc
+{
+   border-style:inherit;
+   text-align: right;
+   background-color:rgba(255, 0, 0, 0.33);
+   color:white;
+   border-style: hidden ;
+}
+.td
+{
+   background-color: rgba(0, 0, 0, 0.79);
+   color:white;
+   border-style: hidden ;
+}
+.ok
+{
+   background-color:rgba(0, 0, 255, 0.637);
+   color:white;
+   border-style: hidden ;
+}
+.ok2
+{
+   border:none;
+   background-color: rgba(128, 128, 128, 0.166);
+}
+a:link
+        {
+           color: cornflowerblue;
+           background-color: transparent; 
+           text-decoration: none;
+        }
+        a:visited
+        {
+            color:rgb(220, 11, 11);
+            background-color:transparent ;
+            text-decoration: wavy;
+        }
+        a:hover
+        {
+            color:grey;
+            background-color:transparent;
+            text-decoration: underline;
+        }
+        a:active
+        {
+            color:rgb(237, 13, 50);
+            background-color: bisque;
+            text-decoration: underline;
+        }
+.ok:visited,:hover
+{
+   color: black;
+}
