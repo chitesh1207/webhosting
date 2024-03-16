@@ -1,0 +1,131 @@
+        body {
+            font-family: Georgia, serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-container {
+            background-color: #e0e0e089;
+            
+            
+        }
+
+        .logo {
+            width: 70px;
+            float: left;
+            margin-left: 180px;
+        }
+
+        .navigation {
+            list-style: none;
+            padding-top: 17px ;
+            float: left;
+            margin-left: 160px; /* 50px distance between logo and navigation */
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            font-weight:bolder;
+            margin-right: 400px;
+            color: black;
+        }
+
+        .navigation li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #0d0d0d;
+            
+            font-size: smaller;
+            font-weight: bold;
+        }
+
+        .navigation a:hover {
+            color: #e67708;
+        }
+
+.journal-title{
+  margin-left: 170px;
+  font-size: 22px;
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+
+}
+h1,p{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: 'Libre Baskerville', serif;
+  
+}
+
+.journal-info {
+  margin-left: 170px;
+  font-family: 'Libre Baskerville', serif;
+  color: rgba(0, 0, 0, 0.782);
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+
+}
+
+.current-issue {
+  margin-left: 170px;
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 55px;
+  font-weight:400;
+  color: black;
+}
+.articles{
+  margin-left:180px ;
+  
+}
+.links{
+  color: #fbb703;
+  background-color: transparent;
+}
+.articles a:hover{
+  color: rgba(91, 85, 85, 0.705);
+}
+strong{
+  margin-top: 20px;
+}
+footer {
+  background-color: #1e3237; /* Light gray background color */
+  padding: 10px 20px; /* Padding for content */
+  display: flex; /* Make footer a flex container */
+  justify-content:right; /* Align items on opposite sides */
+  align-items: center; /* Vertically center content */
+  border-top: 1px solid #ddd; /* Top border */
+}
+
+.footer-container {
+  width: 100%; 
+}
+
+.powered-by-text {
+  font-size: 14px; 
+  color: #ffffff; 
+  margin-left: 700px;
+  padding-top:  80px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.powered-by-text a {
+  color: #f6f6f6; 
+  text-decoration: none; 
+  
+}
+
+.powered-by-text a:hover,
+.theme-info a:hover {
+  color: #fbb703; 
+}
+
+
+
+
